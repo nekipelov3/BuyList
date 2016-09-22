@@ -38,7 +38,7 @@ body {
 .center {
     padding: 20px;
     max-width: 80%;
-    min-width: 460px;
+    /*min-width: 460px;*/
     margin: auto;
 }
 
@@ -98,19 +98,19 @@ body {
 }
 
 .row {
-  padding: 10px 0;
+  padding: 10px;
   border-top: 1px solid #E8E8E8;
   line-height: 30px;
 }
 
 .row-inner-wrap {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .product{
     float: left;
     display: inline-block;
-    width: 40%;
+    width: 30%;
 }
 
 .minus, .plus {
@@ -120,6 +120,7 @@ body {
     border: none;
     color: #fff;
     font-size: 16px;
+    text-align: center;
 }
 
 .minus {
@@ -137,9 +138,10 @@ body {
 }
 
 .number {
-    background: #dadada;
-    padding: 5px 5px;
+    background: #E8E8E8;
+    padding: 5px 8px;
     border-radius: 3px;
+    color: #262626;
 }
 
 .count, .buttons{
@@ -148,10 +150,12 @@ body {
 }
 
 .count {
-    width: 30%;
+    width: 35%;
+    text-align: center;
 }
 .buttons {
-    width: 30%;
+    width: 35%;
+    text-align: right;
 }
 
 .simplebutton, .cancel {
@@ -167,11 +171,9 @@ body {
 }
 .simplebutton:hover{
     background: #d9d9d9;
-    color: #0d0d0d;
 }
 .simplebutton:active{
-    background: #b3b3b3;
-    color: #595959;
+    background: #cccccc;
 }
 
 .cancel {
@@ -188,26 +190,51 @@ body {
 
 
 /*Right List*/
-.bought {
+.r-list {
     background: #fff;
     box-shadow: 0px 2px 4px 0px #888888;
     border-radius: 5px;
 }
 
-.row-outline {
-    padding: 10px;
-    border-bottom: 1.5px solid #E8E8E8;
+.r-box {
+
 }
 
 .r-title {
-    padding: 10px;
+    border-bottom: 1.5px solid #E8E8E8;
+    padding: 15px;
     font-weight: bolder;
     font-size: 16px;
 }
 
-.r-list {
-    padding: 10px 10px;
+.r-contain {
+    border-bottom: 1.5px solid #E8E8E8;
+    padding: 15px;
 }
+
+.item {
+    display: inline-block;
+    background: #E8E8E8;
+    padding: 5px;
+    margin: 1px;
+    font-size: 10px;
+    border-radius: 5px;
+    color: #404040;
+}
+
+.inner1, .inner2 {
+    display: inline-block;
+}
+
+.inner2 {
+    background: #F2711C;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 3px 5px;
+}
+
 
 
 /*Footer*/
@@ -225,11 +252,17 @@ body {
 }
 
 @media (max-width: 768px) {
-    .left,
-    .right {
+    .left, .right {
       width: 100%;
     }
     .left {
       margin-bottom: 20px;
+      min-width: 350px;
+    }
+    .right {
+      min-width: 350px;
+    }
+    .left, .right {
+      padding: 0;
     }
 }
