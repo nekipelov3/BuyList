@@ -244,16 +244,18 @@ body {
     height: 100px;
     left: 15%;
     bottom: -60px;
+    padding: 5px;
     background: #c400db;
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 5px;
     text-align: center;
 }
 
 .badge:hover {
     background: #6300dd;
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
     transform: translateY(-60px);
 }
 
@@ -275,6 +277,23 @@ body {
 }
 
 
+/*Tooltip*/
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    visibility: hidden;
+    background: #c400db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.tooltip:hover::after {
+  	visibility: visible;
+}
+
+
 @media (max-width: 768px) {
     .left, .right {
       width: 100%;
@@ -288,5 +307,16 @@ body {
     }
     .left, .right {
       padding: 0;
+    }
+}
+
+@media print {
+    .badge-name {
+      display: none;
+    }
+    .creator-name {
+      background: white;
+      border: 1px solid #c400db;
+      padding: 10px;
     }
 }
