@@ -17,54 +17,26 @@
               <input class="adding-field boxsizing outline transition" name="Adding" type="text" placeholder="Назва товару">
               <button class="adding-button boxsizing outline transition tooltip1" data-tooltip="Add new item" type="button">Додати</button>
             </div>
+
+            <div class="row-template" style="display: none">
+
             <div class="row clearfix">
               <div class="row-inner-wrap">
-                <div class="product box-sizing">
-                    Помiдори
-                </div>
+                <span class="product box-sizing"></span>
                 <div class="count box-sizing">
                     <button class="minus outline tooltip2" data-tooltip="Decrease">-</button>
                     <span class="number">1</span>
                     <button class="plus outline tooltip2" data-tooltip="Increase">+</button>
                 </div>
                 <div class="buttons box-sizing">
-                      <button class="simplebutton outline tooltip1" data-tooltip="Send to bought list">Купленo</button>
+                      <button class="bought outline tooltip1" data-tooltip="Send to bought list">Купленo</button>
                       <button class="cancel outline tooltip1" data-tooltip="Delete out of the list">Х</button>
+                      <button class="hidden-unbought outline tooltip1" data-tooltip="Cancel">Не купленo</button>
                 </div>
               </div>
             </div>
-            <div class="row clearfix">
-              <div class="row-inner-wrap">
-                <div class="product box-sizing">
-                    Печиво
-                </div>
-                <div class="count box-sizing">
-                    <button class="minus outline tooltip2" data-tooltip="Decrease">-</button>
-                    <span class="number">1</span>
-                    <button class="plus outline tooltip2" data-tooltip="Increase">+</button>
-                </div>
-                <div class="buttons box-sizing">
-                      <button class="simplebutton outline tooltip1" data-tooltip="Send to bought list">Купленo</button>
-                      <button class="cancel outline tooltip1" data-tooltip="Delete out of the list">Х</button>
-                </div>
-              </div>
-            </div>
-            <div class="row clearfix">
-              <div class="row-inner-wrap">
-                <div class="product box-sizing">
-                    Cир
-                </div>
-                <div class="count box-sizing">
-                    <button class="minus outline tooltip2" data-tooltip="Decrease">-</button>
-                    <span class="number">1</span>
-                    <button class="plus outline tooltip2" data-tooltip="Increase">+</button>
-                </div>
-                <div class="buttons box-sizing">
-                      <button class="simplebutton outline tooltip1" data-tooltip="Send to bought list">Купленo</button>
-                      <button class="cancel outline tooltip1" data-tooltip="Delete out of the list">Х</button>
-                </div>
-              </div>
-            </div>
+          </div>
+
         </div>
     </div>
     <div class="right boxsizing">
@@ -103,6 +75,10 @@
   </div>
 
 </div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+<script type="text/javascript" src="main.js"> </script>
+
 </body>
 
 </html>
