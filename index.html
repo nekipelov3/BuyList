@@ -25,7 +25,7 @@
                 <span class="product box-sizing"></span>
                 <div class="count box-sizing">
                     <button class="minus outline tooltip2" data-tooltip="Decrease">-</button>
-                    <span class="number">1</span>
+                    <span class="number"></span>
                     <button class="plus outline tooltip2" data-tooltip="Increase">+</button>
                 </div>
                 <div class="buttons box-sizing">
@@ -39,30 +39,26 @@
 
         </div>
     </div>
-    <div class="right boxsizing">
-          <div class="r-list clearfix">
-              <div class="r-box">
-                <div class="r-title">Залишилося</div>
-                <div class="r-contain">
-                    <div class="item">
-                      <div class="inner1">Помідори</div>
-                      <div class="inner2">1</div>
-                    </div>
-                    <div class="item">
-                      <div class="inner1">Печиво</div>
-                      <div class="inner2">1</div>
-                    </div>
-                    <div class="item">
-                      <div class="inner1">Сир</div>
-                      <div class="inner2">1</div>
-                    </div>
+    <div class="right-template" style="display: none">
+      <div class="right boxsizing">
+            <div class="r-list clearfix">
+                <div class="r-box">
+                  <div class="r-title">Залишилося</div>
+                  <div class="r-contain not-bought">
+                      <div class="item-template" style="display: none;">
+                        <div class="item">
+                          <div class="inner1">Помідори</div>
+                          <div class="inner2">1</div>
+                        </div>
+                      </div>
+                  </div>
                 </div>
-              </div>
-              <div class="r-box">
-                <div class="r-title">Купленo</div>
-                <div class="r-contain"></div>
-              </div>
-          </div>
+                <div class="r-box">
+                  <div class="r-title">Купленo</div>
+                  <div class="r-contain alr-bought"></div>
+                </div>
+            </div>
+      </div>
     </div>
   </div>
 
